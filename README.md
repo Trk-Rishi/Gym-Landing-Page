@@ -9,7 +9,7 @@ which has a fully functional (without DB) webpage for a gym community called "Ta
 ## Live Demo
 
 NOTE : The website isn't responsive and for best visibility , view it at 100% zoom in your browser 
-Try the application at :-  https://trk-rishi.github.io/Music-App-Clone/
+Try the application at :-  https://trk-rishi.github.io/Gym-Landing-Page/
 
 ## Screenshots
 
