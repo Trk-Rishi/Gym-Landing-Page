@@ -9,6 +9,7 @@
     <title>My GYM</title>
 </head>
 <body class="overflow-x-hidden">
+    <div class="HomePage">
    
     <div class="container mx-auto">
         <header class="sticky-header">
@@ -22,7 +23,7 @@
                     <li><a href="#plans"><u>Plans</u></a></li>
                     <li><a href="#services"><u>Services</u></a></li>
                     <li><a href="#contact"><u>Contact Us</u></a></li>
-                    <li><button class="btn">Join Now</button></li>
+                    <li><button class="btn" onclick="openJoinPage()">Join Now</button></li>
                     
                 </ul>
             </nav>
@@ -166,7 +167,109 @@
                     </div>
                </section>
                <hr>
-               <section class="section4" id="contact">
+               <section class="section4">
+                <h1> Testimonials </h1>
+
+                <div class="testi-wrapper">
+                    <div class="testi-track" id="testiTrack">
+                    <div class="testi-card">
+                        <div class="quote-icon">❝</div>
+                        <img src="person1.jpg" class="profile-pic">
+
+                        <div class="testi-content">
+                            <p>
+                                "Joining this program has been a life-changing experience !!! 
+                                The team is professional and supportive , making every interaction valuable. Their dedication and commitment
+                                have truly exceeded       my expectations. "  </p>
+                            <h3> Mr. John Doe</h3>
+                            <span> Customer </span>
+                        </div>
+                    </div>
+                    <div class="testi-card">
+                        <div class="quote-icon">❝</div>
+                        <img src="person3.jpg" class="profile-pic">
+
+                        <div class="testi-content">
+                            <p>
+                                "What makes this gym special is its dedication to quality and member satisfaction. The overall experience has been consistently impressive ."  </p>
+                            <h3> Mr. Chris Evans</h3>
+                            <span> Customer </span>
+                        </div>
+                    </div>
+                    <div class="testi-card">
+                        <div class="quote-icon">❝</div>
+                        <img src="person4.jpg" class="profile-pic">
+
+                        <div class="testi-content">
+                            <p>
+                                "Joining this gym was one of my best decisions. The trainers here are knowledgable , the environment is activating and every sessions feels super productive. "  </p>
+                            <h3> Mr. Sushaan Storm</h3>
+                            <span> Customer </span>
+                        </div>
+                    </div>
+
+                    <div class="testi-card">
+                        <div class="quote-icon">❝</div>
+                        <img src="person5.jpg" class="profile-pic">
+
+                        <div class="testi-content">
+                            <p>
+                                "Being part of this program has been a truly enriching experience !!
+                                The process was smooth , professional and well organised . I highly recommend their services to anyone
+                                looking for experience and growth."
+                            </p>
+                        <h3>Mr. Steve Rogers</h3>
+                        <span>Customer</span>
+                        </div>
+                    </div>
+
+                    <div class="testi-card">
+                        <div class="quote-icon">❝</div>
+                        <img src="person6.jpg" class="profile-pic">
+
+                        <div class="testi-content">
+                            <p>
+                                "The facilities are excellent and the trainers genuinely care about helping members archieve their personal fitness goals."
+                            </p>
+                        <h3>Mr. Patrick Jane</h3>
+                        <span>Customer</span>
+                        </div>
+                    </div>
+
+                    <div class="testi-card">
+                        <div class="quote-icon">❝</div>
+                        <img src="person2.avif" class="profile-pic">
+
+                        <div class="testi-content">
+                            <p>
+                                "The atmostphere here is incredibly motivating . From the well-maintained equipment to the supportive teachers , everthing makes fitness an enjoyable part of my daily routine."
+                            </p>
+                        <h3>Mr. Bruce Banner</h3>
+                        <span>Customer</span>
+                        </div>
+                    </div>
+
+                    <div class="testi-card">
+                        <div class="quote-icon">❝</div>
+                        <img src="person7.jpg" class="profile-pic">
+
+                        <div class="testi-content">
+                            <p>
+                                "A fantastic place with modern equipment , friendly staff and a welcoming atmosphere. I always look forward to my workout sessions."
+                            </p>
+                        <h3>Mr. Bruce Wayne</h3>
+                        <span>Customer</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="testi-navigation">
+                    <button class="nav-btn prev" onclick="moveTestimonial(-1)"> < </button>
+                    <button class="nav-btn next" onclick="moveTestimonial(1)"> > </button>
+                </div>
+               </section>
+               <hr>
+               <section class="section3" id="contact">
                 <h2 class="text-center my-3">Get in Touch</h2>
                 <div class="flex">
                     <div class="topleft2 flex flex-col justify-center items-center">
@@ -211,7 +314,52 @@
         </main>
         <footer>Copyright &copy; TanmayGym.com | All Rights Reserved</footer>
     </div>
+    </div>
+
+    <section id="joinPage">
+
+        <div class="join-container">
+            <h1> Join Tanmay's Gym </h1>
+            <p>Pick your membership plan and take the next step !!!</p>
+            
+            <form id="joinForm">
+                <label> Full Name </label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+
+                <label> Email Id </label>
+                <input type="email" id="email" placeholder="Enter your email id" required>
+
+                <label> Contact Number </label>
+                <input type="tel" id="contact" placeholder="Enter your mobile number" required pattern="[0-9]{10}" maxlength="10">
+
+                <label> Select Membership </label>
+                <select id="plan" required>
+                    <option value="" disabled selected>Select a plan</option>
+                    <option value="Standard"> Standard </option>
+                    <option value="Gold-Tier"> Gold-Tier </option>
+                    <option value="Premiuim"> Premiuim </option>
+                </select>
+                <button type="submit" class="submit-btn"> Submit </button>
+            </form>
+                <button class="back-btn" onclick="closeJoinPage()">
+                   ← Back to Home
+        </button>
+        </div>
+    </section>
+    <section id="successPage">
+        <div class="success-container">
+            <div class="success-icon"> ✅ </div>
+            <h1>Registration Successful !!!</h1>
+            <p> Transaction Details have been sent via email.
+            </p>
+
+            <button class="submit-btn" onclick="proceedFurther()">
+                Proceed Further ->
+            </button> 
+        </div>
+    </section>
     <script src="script.js"></script>
+
 </body>
 
 </html>

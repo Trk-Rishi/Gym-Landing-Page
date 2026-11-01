@@ -179,10 +179,11 @@ footer{
 
 .topleft2{
     height: 40vh;
+    width: 100vw;
 }
 
 .topleft2 p{
-    width: 50%;
+    width: 100%;
     padding: 10px 10px;
    
 }
@@ -219,7 +220,7 @@ footer{
 }
 
 .btngrab{
-    margin-right: 4rem;
+    margin-right:  0;
 }
 
 .formgroup input,
@@ -301,3 +302,307 @@ footer{
     background-color: #4388ca;
 }
 
+
+
+.section4 {
+    width: 100%;
+    padding: 35px 20px;
+    background: antiquewhite;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+.section4 h1 {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 65px;
+    font-weight: bold;
+}
+/* 
+.testi-container {
+    display: grid;
+    grid-template-columns: repeat(2, 380px);
+    justify-content: center;
+    gap: 55px 45px;
+}
+ */
+
+.testi-card {
+    position: relative;
+    width: 300px;
+    min-height: 175px;
+    background: #f4faff;
+    border: 1px solid #333;
+    box-shadow: 5px 6px 7px rgb(89, 112, 227);
+    padding: 30px 20px 15px;
+    box-sizing: border-box;
+
+}
+
+
+.quote-icon {
+    position: absolute;
+    top: -35px;
+    left: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 75px;
+    font-weight: bold;
+    background: none;
+    color:black;
+
+}
+
+
+.profile-pic {
+    position:absolute;
+    top: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 3px solid black;
+    object-fit: cover;
+    margin-bottom: 50px;
+    background: #13c5ce;
+}
+
+.testi-content {
+    margin-top: 20px;
+    background: none;
+}
+
+.testi-content p {
+    font-size: 11px;
+    line-height: 1.6;
+    color: #555;
+    background: none;
+    min-height: 50px;
+    margin-bottom: 12px;
+}
+
+.testi-content h3 {
+    font-size: 14px;
+    color: rgb(242, 28, 0);
+    margin-top: 5px;
+    
+    background: none;
+}
+
+.testi-content span {
+    font-size: 11px;
+    color: red;
+    background: none;
+}
+
+.testi-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.nav-btn {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.nav-btn.prev {
+    background: rgb(89, 112, 227);;
+    color: white;
+}
+
+.nav-btn.next {
+    background: rgb(89, 112, 227);;
+    color: white;
+}
+
+.nav-btn:hover {
+    transform: scale(1.1);
+}
+
+
+.testi-wrapper{
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+    overflow: hidden;
+    padding: 30px 10px 15px;
+    box-sizing: border-box;
+}
+
+
+.testi-track{
+    display: flex;
+    gap: 35px;
+    transition: transform 0.6s ease-in-out;
+
+}
+
+.testi-track .testi-card {
+    flex: 0 0 calc((100% - 35px) / 2);
+    min-width: 0;
+
+}
+
+
+
+
+#joinPage {
+    display: none; 
+
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    background-color: aquamarine;    
+}
+
+#joinForm {
+    background: none;
+}
+
+.join-container {
+    width: 100%;
+    max-width: 480px;
+    background-color: white;
+    
+    padding: 35px;
+    border: 2px solid black;
+    border: 13px;
+    box-shadow: 7px 7px 0 black;
+    box-sizing: border-box; 
+    
+}
+.join-container h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;    
+    background: none;
+}
+
+.join-container p {
+    text-align: center;
+    background: none;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.join-container label {
+    display: block;
+    font-weight: bold;
+    background: none;
+    margin: 15px 0 7px;
+}
+
+
+.join-container input, .join-container select {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #555;
+    border-radius: 6px;
+    font-size: 15px;
+    box-sizing: border-box;
+    background-color: aliceblue;
+}
+
+.join-container input:focus, .join-container select:focus {
+outline: none;
+border: 2px solid rgb(89,112,227);
+}
+
+
+.submit-btn {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    color: white;
+    font-weight: bolder;
+    border: 2px solid black;
+    border-radius: 25px;
+    font-size: 17px;
+    cursor: pointer;
+
+
+
+    background-color:rgb(89, 112, 227);
+}
+
+.submit-btn:hover{
+    background-color: black;
+}
+
+.back-btn {
+    display: block;
+    margin: 20px auto 0;
+    background:none;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+#successPage {
+    display: none;
+
+
+    min-height: 100vh;
+    width: 100%;
+    background-color: #faec;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.success-container {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 12px;
+    box-shadow: 7px 7px 0 black;
+    padding: 45px 30px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+
+
+.success-icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #d9f5df;
+    color: #218838;
+    font-size: 42px;
+    display: flex;
+    margin: 0 auto 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.success-container h1 {
+    font-size: 26px;
+    background: none;
+    
+}
+
+
+.success-container p {
+    color: #555;
+    background: none;
+    line-height: 1.6;
+}

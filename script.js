@@ -72,3 +72,25 @@ window.alert = function(message) {
 };
 
 
+let currentTestimonial = 0;
+function moveTestimonial(direction) {
+    const track = document.getElementById('testiTrack');
+    const cards = track.querySelectorAll('.testi-card');
+
+    const visisbleCards = window.innerWidth <= 600 ? 1 : 2;
+    
+    const maxIndex = Math.max(0, cards.length - visisbleCards);
+
+    currentTestimonial += direction * visisbleCards;
+    
+    currentTestimonial = Math.max(0, Math.min(currentTestimonial, maxIndex));
+
+    const cardWidth = cards[0].getBoundingClientRect().width;
+    const gap = parseFloat(getComputedStyle(track).gap);
+
+    track.style.transform = `translateX(-${currentTestimonial * (cardWidth + gap)}px)`; 
+}
+
+
+
+
