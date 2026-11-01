@@ -58,12 +58,22 @@
 
 }
 
+.navbar li a {
+  color: black;
+  text-decoration: none;
+}
+
+
+.navbar ul li a:visited {
+  color: black;
+}
+
 .justify-between{
     justify-content: space-between;
 }
 
 .my-1{
-    margin-top: 13px;
+    margin-top: 1px;
     margin-bottom: 13px;
 }
 .my-2{
@@ -71,7 +81,14 @@
     margin-bottom: 26px;
 }
 
+.my-3{
+    margin-top: 26px;
+    margin-bottom: 0px;
+}
 
+.text-left{
+    text-align: left;
+}
 .px-2{
     padding-left: 13px;
     padding-right: 13px;
@@ -107,4 +124,14 @@
 }
 
 
+.items-left{
+    align-items: start;
+}
 
+.items-right{
+    align-items: end;
+}
+
+.justify-end{
+    justify-content: end;
+}

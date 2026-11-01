@@ -11,17 +11,17 @@
 <body class="overflow-x-hidden">
    
     <div class="container mx-auto">
-        <header>
+        <header class="sticky-header">
             <nav class="flex justify-between">
                 <div class="logo text-blue fontbold flex items-center fontbold">
                    Tanmay's Gym
                 </div>
                 <ul class="navbar flex items-center">
                 
-                    <li><u>Home</u></li>
-                    <li><u>Plans</u></li>
-                    <li><u>Services</u></li>
-                    <li><u>Contact Us</u></li>
+                    <li><a href="#home"><u>Home</u></a></li>
+                    <li><a href="#plans"><u>Plans</u></a></li>
+                    <li><a href="#services"><u>Services</u></a></li>
+                    <li><a href="#contact"><u>Contact Us</u></a></li>
                     <li><button class="btn">Join Now</button></li>
                     
                 </ul>
@@ -29,7 +29,7 @@
             <hr>
         </header>
         <main class="min-h-screen">
-               <section class="section1">
+               <section class="section1" id="home">
                     <div class="flex">
                        <div class="topleft flex flex-col px-2">
                         <img src="dumbell.png" alt="icon" class="dumbellimg">    
@@ -38,9 +38,9 @@
 
                              <p class="deal text-center">The deal ends in  <span id="demo"></span></p>
                              <div class="buttons flex justify-center">
-                                <button class="btn">Grab Now</button>
+                                <button class="btn btngrab2">Grab Now</button>
                                 <p class="ignore">1</p>
-                                <button class="btn">Contact Us</button>
+                                <button class="btn btnlink"><a href="#contact">Contact Us</a></button>
                              </div>
                         </div>
                         <div class="topright overflow-x-hidden overflow-y-hidden flex items-center justify-center">
@@ -51,7 +51,7 @@
                <br>
                <br>
                <hr>
-               <section class="section2">
+               <section class="section2" id="plans">
                 
                 <h1 class="text-center my-2">Pricing</h1>
                 <p class="my-2 text-center">Explore our flexible membership plans designed to fit every fitness goal and budget. Enjoy access to premium equipment, expert guidance, personalized training sessions, and exclusive member benefits. Choose the perfect plan and take the first step towards a healthier lifestyle.</p>
@@ -95,7 +95,7 @@
                <br>
                <br>
                <hr>
-               <section class="section3">
+               <section class="section3" id="services">
                    <h2 class="text-center"> Compare Plans</h2>
                     <div class="container plantable">
                         <table class="table text-center">
@@ -166,15 +166,44 @@
                     </div>
                </section>
                <hr>
-               <section class="section4">
-                <h2 class="text-center my-2">Get in Touch</h2>
+               <section class="section4" id="contact">
+                <h2 class="text-center my-3">Get in Touch</h2>
                 <div class="flex">
-                    <div class="topleft1 flex flex-col justify-center">
+                    <div class="topleft2 flex flex-col justify-center items-center">
                         
-                        <p class="text-center">I'd love to hear from you!</p>
-                        <p> If you have any inquiries or just want to say hi, please use the contact form!</p>
+                        <p class="p12">I'd love to hear from you!</p>
+                        <p> If you have any inquiries or just want to say hello, please use the contact form!</p>
                     </div>
-                    <div class="topright1"></div>
+                    <div class="topright2 flex flex-col justify-center">
+                        
+                        <div class="flex">
+                            <div class="formgroup flex flex-col">
+                                <label for="firstname" class="text-left">First Name *</label>
+                                <input id="firstname" type="text">
+                            </div>
+                            <div class="formgroup flex flex-col">
+                                <label for="lastname" class="text-left">Last Name *</label>
+                                <input id="lastname" type="text">
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="formgroup items-left flex flex-col">
+                                <label for="email" class="text-left">Email *</label>
+                                <input id="email" type="text">
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="formgroup items-left flex flex-col">
+                                <label for="comments">Message *</label>
+                                <textarea id="comments" rows="5" cols="53"></textarea>
+                            </div>
+                        </div>
+                        <div class="flex justify-end">
+                            <button class="btn2 btngrab">Send</button>
+                        </div>
+                        
+                        
+                    </div>
                     
                 </div>
                </section>

@@ -19,3 +19,56 @@ var x = setInterval(function() {
     }
 
 }, 1000);
+
+
+
+
+const sendButton = document.querySelector('.btn2.btngrab');
+sendButton.addEventListener('click', function() {
+    const firstName = document.getElementById('firstname');
+    const lastName = document.getElementById('lastname');
+    const email = document.getElementById('email');
+    const comments = document.getElementById('comments');
+
+    alert('Message sent  successfully !');
+
+    firstName.value = '';
+    lastName.value = '';
+    email.value = '';
+    comments.value = '';
+});
+
+const sendButton2 = document.querySelector('.btn.btngrab2');
+sendButton2.addEventListener('click', function() {
+    
+    alert('Deal Availed Successfully !!!');
+
+});
+
+
+
+
+
+window.alert = function(message) {
+    const overlay = document.createElement('div');
+    overlay.className = 'custom-alert-overlay';
+    
+
+    const alertBox = document.createElement('div');
+    alertBox.className = 'custom-alert-box';
+
+    alertBox.innerHTML = `
+    <div class="custom-alert-header">Notification</div>
+    <div class="custom-alert-body">${message}</div>
+    <button class="custom-alert-btn">OK</div>
+    `;
+
+    overlay.appendChild(alertBox);
+    document.body.appendChild(overlay);
+
+    alertBox.querySelector('.custom-alert-btn').addEventListener('click', function () {
+        overlay.remove();
+    });
+};
+
+
