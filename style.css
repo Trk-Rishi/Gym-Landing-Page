@@ -107,7 +107,6 @@ font-family: fantasy;
 .plantable{
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .section3 table{
@@ -263,7 +262,7 @@ footer{
 }
 
 .custom-alert-box {
-    background: #ffffff;
+    background: antiquewhite;
     width: 320px;
     border-radius: 8px;
     box-shadow: 0 4px 24px rgba(154, 56, 56, 0.4);

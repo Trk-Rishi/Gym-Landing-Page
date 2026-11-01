@@ -94,3 +94,41 @@ function moveTestimonial(direction) {
 
 
 
+
+
+function openJoinPage() {
+    document.getElementById("homePage").style.display = "none";
+    document.getElementById("joinPage").style.display = "flex";
+
+    window.scrollTo(0, 0);
+
+}
+
+
+function closeJoinPage() {
+    document.getElementById("joinPage").style.display = "none";
+
+
+    
+    document.getElementById("homePage").style.display = "block";
+
+    window.scrollTo(0, 0);
+}
+
+
+document.getElementById("joinForm").addEventListener("submit", function (event) {
+
+    event.preventDefault();
+
+    
+    document.getElementById("joinPage").style.display = "none";
+    document.getElementById("successPage").style.display = "flex";
+
+    window.scrollTo(0,0);
+});
+
+
+
+function proceedFurther() {
+    alert("Your next step will be available on your email !")
+}
